@@ -31,11 +31,102 @@ body {
     margin-bottom: 2rem;
 }
 
-.hero a {
-    color: #0f172a;
+#about {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+    background: #16213e;
+    border-radius: 10px;
+}
+
+#about h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+#about p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+#projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+.project-card {
+    background: #16213e;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card h4 {
+    color: #38bdf8;
+}
+
+.project-card p {
+    line-height: 1.7;
+}
+
+.tech-stack {
+    font-weight: bold;
+    color: #cbd5e1;
+}
+
+#contact {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#contact h2 {
+    color: #38bdf8;
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Alla knappar */
+
+.hero a,
+.project-card a,
+.contact-links a {
+    display: inline-block;
     background: #38bdf8;
-    padding: 0.8rem 1.2rem;
-    border-radius: 6px;
+    color: #0f172a;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    margin: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+
+.hero a:hover,
+.project-card a:hover,
+.contact-links a:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
 }
